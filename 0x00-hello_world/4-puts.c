@@ -5,14 +5,11 @@
 /**
  *main - Prints a 52 character statement
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char str1[52];
-
-	strcpy(str1, "\"Programming is like building a mulitlingual puzzle");
-	puts(str1);
+	puts("\"Programming is like building a mulitlingual puzzle");
 	return (0);
 }
