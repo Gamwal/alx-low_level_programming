@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main: Entry point
+ * main - Entry point
  *
  * Description: Prints the size of the type
  * that each value contains
