@@ -3,13 +3,13 @@
 /**
  * main - Entry point
  *
- * Description: Print with the puts function
+ * Description: Print with the printf function
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	puts("\"Programming is like building a mulitlingual puzzle");
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
