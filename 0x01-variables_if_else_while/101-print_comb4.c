@@ -22,7 +22,10 @@ int main(void)
 			k = 0;
 			while (k <= 9)
 			{
-				if (j > i && k > j && i != j && j != k && i != k)
+				if (j > i &&
+					k > j &&
+					i != j &&
+					j != k)
 				{
 					putchar(i + '0');
 					putchar(j + '0');
@@ -34,11 +37,11 @@ int main(void)
 						putchar(' ');
 					}
 				}
+				k++;
 			}
-			k++;
-		j++;
+			j++;
+		i++;
 		}
-	i++;
 	}
 	putchar('\n');
 	return (0);
