@@ -2,17 +2,15 @@
 
 /**
  * _abs - return absolute number
- * @int: number to be checked
+ * @n: number to be checked
  *
  * Return: Always 0 (Success)
  */
 
-int _abs(int)
+int _abs(int n)
 {
-	if (int > 0)
-		_putchar(int);
-	else if (int < 0)
-		_putchar(0 - int);
+	if (n < 0)
+		_putchar(-n);
 	else
 		_putchar(0);
 	return (0);
