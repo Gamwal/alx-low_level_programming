@@ -1,15 +1,13 @@
 #include "main.h"
 
 /**
- * print_times_table - prints the times table of an integer starting with zero
- * @n: Number to use
- *
- * Return: Always 0.
+ * print_times_table - prints times table of n
+ * @n: number to generate times table
  */
 
 void print_times_table(int n)
 {
-	int x, y, product;
+	int product, x, y;
 
 	if (n <= 15 && n >= 0)
 	{
@@ -18,31 +16,26 @@ void print_times_table(int n)
 			for (y = 0; y <= n; y++)
 			{
 				product = x * y;
-				if (y != 0)
+
+				if (product < 10)
 				{
-					_putchar(',');
-					_putchar(' ');
 					_putchar(' ');
 				}
-				if (y == 0)
+				else if (product < 100)
 				{
-					_putchar('0');
+					_putchar(' ')
 				}
-				else if (product >= 10 && product < 100)
+
+				if (product >= 100)
+				{
+					_putchar(product / 100 + '0');
+					_putchar((product / 10) & 10 + '0');
+				}
+				else if (product < 100 && product >= 10)
 				{
 					_putchar((product / 10) + '0');
-					_putchar((product % 10) + '0');
 				}
-				else if ((product < 10) && (y != 0))
-				{
-					_putchar(' ');
-					_putchar((product % 10) + '0');
-				}
-				else if (product >= 100)
-				{
-					_putchar((product / 100) + 0);
-					_putchar((product / 10) % 10 + 0);
-				}
+				_putchar(product % 10 + '0');
 			}
 			_putchar('\n');
 		}
