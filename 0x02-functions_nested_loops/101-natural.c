@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 
 /**
  * main - Entry point
@@ -14,7 +14,7 @@ int main(void)
 {
 	int i, j;
 
-	for (i = 0; i < 1024; ++i)
+	for (j = 0; j < 1024; ++j)
 	{
 		if ((j % 3 == 0) || (j % 5 == 0))
 			i += j;
