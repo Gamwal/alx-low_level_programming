@@ -7,35 +7,35 @@
 
 void print_times_table(int n)
 {
-	int product, x, y;
+	int product, i, j;
 
 	if (n <= 15 && n >= 0)
 	{
-		for (x = 0; x <= n; x++)
+		for (i = 0; i <= n; i++)
 		{
-			for (y = 0; y <= n; y++)
+			for (j = 0; j <= n; j++)
 			{
-				product = x * y;
+				product = i * j;
 
-				if (product < 10)
+				if (product == 0)
 				{
-					_putchar(' ');
+					_putchar('0');
 				}
-				else if (product < 100)
+				else if (product < 10)
 				{
-					_putchar(' ');
+					_putchar(product + '0');
 				}
-
-				if (product >= 100)
-				{
-					_putchar((product / 100) + '0');
-					_putchar(((product / 10) & 10) + '0');
-				}
-				else if (product < 100 && product >= 10)
+				else if (product >= 10 && product < 100)
 				{
 					_putchar((product / 10) + '0');
+					_putchar((product % 10) + '0');
 				}
-				_putchar((product % 10) + '0');
+				else if (product >= 100)
+				{
+					_putchar((product / 100) + '0');
+					_putchar(((product % 100) / 10) + '0');
+					_putchar(((product % 100) % 10) + '0');
+				}
 			}
 			_putchar('\n');
 		}
