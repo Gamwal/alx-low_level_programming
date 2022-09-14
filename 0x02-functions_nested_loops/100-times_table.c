@@ -1,40 +1,44 @@
 #include "main.h"
 
 /**
- * times_table - prints the times table of an integer starting with zero
+ * print_times_table - prints the times table of an integer starting with zero
+ * @n: Number to use
  *
  * Return: Always 0.
  */
 
-void times_table(void)
+void print_times_table(int n)
 {
 	int x, y, product;
 
-	for (x = 0; x <= 9; x++)
+	if (n <= 15 && n <= 0)
 	{
-		for (y = 0; y <= 9; y++)
+		for (x = 0; x <= n; x++)
 		{
-			product = x * y;
-			if (y != 0)
+			for (y = 0; y <= n; y++)
 			{
-				_putchar(',');
-				_putchar(' ');
+				product = x * y;
+				if (y != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+				if (y == 0)
+				{
+					_putchar('0');
+				}
+				else if (product >= 10)
+				{
+					_putchar((product / 10) + '0');
+					_putchar((product % 10) + '0');
+				}
+				else if ((product < 10) && (y != 0))
+				{
+					_putchar(' ');
+					_putchar((product % 10) + '0');
+				}
 			}
-			if (y == 0)
-			{
-				_putchar('0');
-			}
-			else if (product >= 10)
-			{
-				_putchar((product / 10) + '0');
-				_putchar((product % 10) + '0');
-			}
-			else if ((product < 10) && (y != 0))
-			{
-				_putchar(' ');
-				_putchar((product % 10) + '0');
-			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
