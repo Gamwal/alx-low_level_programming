@@ -13,4 +13,4 @@ char *leet(char *b);
 char *rot13(char *b);
 
 
-#endif
+#endif /*MAIN_H*/
