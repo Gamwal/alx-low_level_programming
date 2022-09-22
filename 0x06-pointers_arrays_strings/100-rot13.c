@@ -31,7 +31,7 @@ char *rot13(char *b)
 			     'j', 'k', 'l', 'm'};
 	while (b[i])
 	{
-		for (j = 0; j < 5; j++)
+		for (j = 0; j < 52; j++)
 		{
 			if (b[i] == alphabet[j])
 			{
