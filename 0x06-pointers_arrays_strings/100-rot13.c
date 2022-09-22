@@ -1,16 +1,14 @@
 #include "main.h"
-
 /**
- * *rot13 - function that encodes a string using rot13
- * @b: string to be encoded
+ * rot13- function encodes a string using rot13
+ * @str: string to be changed
  *
- * Return: encoded string
+ * Return: pointer to changed string
  */
-
-char *rot13(char *b)
+char *rot13(char *str)
 {
-	int i = 0;
-	int j;
+	int index1 = 0;
+	int index2;
 	char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F',
 			     'G', 'H', 'I', 'J', 'K', 'L',
 			     'M', 'N', 'O', 'P', 'Q', 'R',
@@ -29,17 +27,20 @@ char *rot13(char *b)
 			     'x', 'y', 'z', 'a', 'b', 'c',
 			     'd', 'e', 'f', 'g', 'h', 'i',
 			     'j', 'k', 'l', 'm'};
-	while (b[i])
+
+	while (str[index1])
 	{
-		for (j = 0; j < 52; j++)
+		for (index2 = 0; index2 < 52; index2++)
 		{
-			if (b[i] == alphabet[j])
+			if (str[index1] == alphabet[index2])
 			{
-				b[i] = rot13key[j];
+				str[index1] = rot13key[index2];
 				break;
 			}
 		}
-		i++;
+
+		index1++;
 	}
-	return (b);
+
+	return (str);
 }
