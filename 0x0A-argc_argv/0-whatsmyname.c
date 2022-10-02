@@ -1,9 +1,17 @@
-#include <main.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * mynameis - this program prints it's name
+ * main - program body
+ * @argc: argc variable
+ * @argv[]: argv variable
  *
- * Return: program name
+ * Return: 0
  */
 
-int 
+int main(int argc, char *argv[])
+{
+	(void)argc;
+	printf("%s\n", argv[0]);
+	return (0);
+}
