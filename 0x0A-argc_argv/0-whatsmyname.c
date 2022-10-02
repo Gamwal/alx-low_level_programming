@@ -4,7 +4,7 @@
 /**
  * main - program body
  * @argc: argc variable
- * @argv[]: argv variable
+ * @argv: argv variable
  *
  * Return: 0
  */
