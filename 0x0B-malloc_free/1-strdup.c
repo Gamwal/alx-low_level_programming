@@ -14,7 +14,9 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	char tab[] = str;
+	char *tab;
+
+	tab[] = str;
 
 	return (tab);
 }
