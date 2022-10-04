@@ -11,22 +11,24 @@
 
 char *_strdup(char *str)
 {
-	char *tab;
-	int i = 0, j = 0;
-	
-	if (str == NULL)
+	char *duplicate;
+	int index, len = 0;
+
+	if (str == 0)
 		return (NULL);
 
-	while (str)
-		i++;
+	for (index = 0; str[index]; index++)
+		len++;
 
-	tab = malloc(sizeof(str) * i);
+	duplicate = malloc(sizeof(char) * (len + 1));
 
-	if (tab == NULL)
+	if (duplicate == NULL)
 		return (NULL);
 
-	for (j = 0; j < i; j++)
-		tab[j] = str[j];
+	for (index = 0; str[index]; index++)
+		duplicate[index] = str[index];
 
-	return (tab);
+	duplicate[len] = '\0';
+
+	return (duplicate);
 }
