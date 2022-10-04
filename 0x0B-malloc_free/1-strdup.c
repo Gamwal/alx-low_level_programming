@@ -11,10 +11,10 @@
 
 char *_strdup(char *str)
 {
+	char *tab;
+	
 	if (str == NULL)
 		return (NULL);
-
-	char *tab;
 
 	tab[] = str;
 
