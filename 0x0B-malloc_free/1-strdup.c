@@ -25,7 +25,7 @@ char *_strdup(char *str)
 	if (tab == NULL)
 		return (NULL);
 
-	for (j = 0 j < i; j++)
+	for (j = 0; j < i; j++)
 		tab[j] = str[j];
 
 	return (tab);
