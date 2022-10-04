@@ -16,6 +16,11 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
+	tab = malloc(sizeof(str));
+	
+	if (tab == NULL)
+		return (NULL);
+
 	tab[] = str;
 
 	return (tab);
