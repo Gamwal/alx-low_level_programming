@@ -12,16 +12,21 @@
 char *_strdup(char *str)
 {
 	char *tab;
+	int i = 0, j = 0;
 	
 	if (str == NULL)
 		return (NULL);
 
-	tab = malloc(sizeof(str));
-	
+	while (str)
+		i++;
+
+	tab = malloc(sizeof(str) * i);
+
 	if (tab == NULL)
 		return (NULL);
 
-	tab = str;
+	for (j = 0 j < i; j++)
+		tab[j] = str[j];
 
 	return (tab);
 }
