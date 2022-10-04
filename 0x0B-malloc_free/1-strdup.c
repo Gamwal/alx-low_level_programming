@@ -21,7 +21,7 @@ char *_strdup(char *str)
 	if (tab == NULL)
 		return (NULL);
 
-	tab[] = str;
+	tab = str;
 
 	return (tab);
 }
