@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
  * _print - moves a string one place to the left and prints the string
@@ -9,7 +8,7 @@
  * Return: void
  */
 void _print(char *str, int l)
-OBOBOB{
+{
 	int i, j;
 
 	i = j = 0;
