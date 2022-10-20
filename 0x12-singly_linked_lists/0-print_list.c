@@ -14,7 +14,7 @@ size_t print_list(const list_t *h)
 	const list_t *nodeptr = h;
 	
 	if (nodeptr == NULL)
-		return;
+		return (0);
 	while (nodeptr != NULL)
 	{
 		if (nodeptr->str == NULL)
