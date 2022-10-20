@@ -12,7 +12,9 @@ size_t print_list(const list_t *h)
 {
 	int count = 0;
 	const list_t *nodeptr = h;
-
+	
+	if (nodeptr == NULL)
+		return;
 	while (nodeptr != NULL)
 	{
 		if (nodeptr->str == NULL)
