@@ -11,8 +11,8 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int fo, count;
-	ssize_t fw;
+	int fo, fw, count;
+	/*ssize_t fw;*/
 
 	if (filename == NULL)
 		return (-1);
