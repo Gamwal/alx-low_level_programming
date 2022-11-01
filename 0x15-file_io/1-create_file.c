@@ -23,7 +23,7 @@ int create_file(const char *filename, char *text_content)
 			count++;
 	}
 
-	fo = open(filename, O_CREAT | O_WRONLY, 00600);
+	fo = open(filename, O_CREAT | O_RDWR | O_TRUNC, 00600);
 
 	fw = write(fo, text_content, count);
 
