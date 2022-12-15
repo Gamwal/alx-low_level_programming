@@ -6,7 +6,7 @@
  * @index: the index of the node
  *
  * Return: NULL, if node doesn't exist or
- * 		the data in the nth node
+ *		the data in the nth node
  */
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
