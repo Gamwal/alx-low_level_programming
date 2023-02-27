@@ -17,7 +17,7 @@ def island_perimeter(grid):
     Returns:
         the perimeter of the island in grid
     """
-    
+
     nrows = len(grid)
     ncols = len(grid[0])
     perimeter = 0
@@ -38,5 +38,4 @@ def island_perimeter(grid):
                     if grid[i + 1][j] == 1:
                         p -= 1
                 perimeter += p
-                
     return(perimeter)
