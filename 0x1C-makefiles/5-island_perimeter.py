@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Island Perimeter Function"""
 
+
 def island_perimeter(grid):
     """returns the perimeter of an island
     grid is a list of list of integers:
