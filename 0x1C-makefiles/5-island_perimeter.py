@@ -12,10 +12,11 @@ def island_perimeter(grid):
                         p -= 1
                 if j != 0:
                     if grid[i][j - 1] == 1:
-                        np -= 1
-                if j != shape_of_gid9[1]
-                if grid[i][j + 1] == 1:
-                    p -= 1
-                if grid[i + 1][j] == 1:
-                    p -= 1
-                perimeter += 
+                        p -= 1
+                if (j + 1) != shape_of_grid[1]:
+                    if grid[i][j + 1] == 1:
+                        p -= 1
+                if (i + 1) != shape_of_grid[0]:
+                    if grid[i + 1][j] == 1:
+                        p -= 1
+                perimeter += p
